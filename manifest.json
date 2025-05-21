@@ -1,0 +1,29 @@
+{
+  "manifest_version": 3,
+  "name": "AI会议摸鱼神器",
+  "version": "0.1.0",
+  "description": "打工人的会议摸鱼神器！实时记录会议内容，AI提示发言要点。轻松应对各种会议，摸鱼也能机智应答。",
+  "icons": {
+    "128": "icons/icon128_blank.png"
+  },
+  "permissions": [
+    "storage",
+    "activeTab",
+    "notifications",
+    "audioCapture",
+    "background",
+    "https://dashscope.aliyuncs.com/",
+    "scripting"
+  ],
+  "optional_host_permissions": ["*://*/*"],
+  "action": {
+    "default_title": "AI会摸鱼",
+    "default_popup": "sidebar.html"
+  },
+  "host_permissions": [
+    "https://dashscope.aliyuncs.com/*"
+  ],
+  "content_security_policy": {
+    "extension_pages": "script-src 'self'; connect-src 'self' https://dashscope.aliyuncs.com;"
+  }
+}
